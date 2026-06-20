@@ -1,0 +1,23 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1200" fill="#1f1d1a"/>
+  <rect width="1600" height="1200" fill="url(#grid)"/>
+
+  <g stroke="#cfc9bd" stroke-width="8" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M260 760 V470 H980 L1120 560 H1300 Q1340 560 1340 600 V760"/>
+    <path d="M260 760 H1340"/>
+    <line x1="980" y1="470" x2="980" y2="760"/>
+    <rect x="1040" y="600" width="120" height="90"/>
+  </g>
+  <g fill="#1f1d1a" stroke="#cfc9bd" stroke-width="8">
+    <circle cx="500" cy="780" r="70"/>
+    <circle cx="1140" cy="780" r="70"/>
+  </g>
+  <g fill="#F4B400" opacity="0.9"><circle cx="500" cy="780" r="20"/></g>
+  <g fill="#d07a45" opacity="0.9"><circle cx="1140" cy="780" r="20"/></g>
+  <text x="430" y="600" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#5b554c" opacity="0.5">EPH</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1200" fill="#1f1d1a"/>
+  <rect width="1600" height="1200" fill="url(#grid)"/>
+
+  <g stroke="#cfc9bd" stroke-width="8" fill="none" stroke-linejoin="round">
+    <rect x="440" y="300" width="720" height="680"/>
+  </g>
+  <g fill="none" stroke="#5b554c" stroke-width="5">
+    <rect x="492" y="360" width="96" height="96"/><rect x="642" y="360" width="96" height="96"/><rect x="792" y="360" width="96" height="96"/><rect x="942" y="360" width="96" height="96"/><rect x="492" y="510" width="96" height="96"/><rect x="642" y="510" width="96" height="96"/><rect x="792" y="510" width="96" height="96"/><rect x="942" y="510" width="96" height="96"/><rect x="492" y="660" width="96" height="96"/><rect x="642" y="660" width="96" height="96"/><rect x="792" y="660" width="96" height="96"/><rect x="942" y="660" width="96" height="96"/>
+  </g>
+  <g stroke="#6ea3c4" stroke-width="8" fill="none" opacity="0.85">
+    <rect x="740" y="820" width="120" height="160" fill="#1f1d1a"/>
+  </g>
+  <line x1="320" y1="980" x2="1280" y2="980" stroke="#5b554c" stroke-width="8"/>
+</svg>

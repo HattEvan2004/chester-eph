@@ -1,0 +1,33 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1200" fill="#1f1d1a"/>
+  <rect width="1600" height="1200" fill="url(#grid)"/>
+
+  <g stroke="#5b554c" stroke-width="6" fill="none">
+    <path d="M120 1000 V300 H760"/>
+    <path d="M300 1000 V520 H980"/>
+    <path d="M120 300 H40"/>
+  </g>
+  <g stroke="#F4B400" stroke-width="6" fill="none">
+    <path d="M980 520 V820 H1320"/>
+    <path d="M760 300 V160 H1180"/>
+  </g>
+  <!-- junction boxes -->
+  <g fill="#1f1d1a" stroke="#cfc9bd" stroke-width="5">
+    <rect x="98" y="278" width="44" height="44"/>
+    <rect x="278" y="498" width="44" height="44"/>
+    <circle cx="980" cy="520" r="16"/>
+    <circle cx="760" cy="300" r="16"/>
+  </g>
+  <!-- breaker panel -->
+  <g transform="translate(1140,640)">
+    <rect x="0" y="0" width="300" height="430" fill="#1f1d1a" stroke="#cfc9bd" stroke-width="6"/>
+    <rect x="28" y="34" width="244" height="362" fill="none" stroke="#5b554c" stroke-width="4"/>
+    <rect x="44" y="60" width="92" height="28" fill="#F4B400" opacity="0.9"/><rect x="44" y="106" width="92" height="28" fill="#5b554c" opacity="0.9"/><rect x="44" y="152" width="92" height="28" fill="#5b554c" opacity="0.9"/><rect x="44" y="198" width="92" height="28" fill="#F4B400" opacity="0.9"/><rect x="44" y="244" width="92" height="28" fill="#5b554c" opacity="0.9"/><rect x="44" y="290" width="92" height="28" fill="#5b554c" opacity="0.9"/><rect x="44" y="336" width="92" height="28" fill="#F4B400" opacity="0.9"/>
+    <rect x="164" y="60" width="92" height="28" fill="#5b554c"/><rect x="164" y="106" width="92" height="28" fill="#5b554c"/><rect x="164" y="152" width="92" height="28" fill="#5b554c"/><rect x="164" y="198" width="92" height="28" fill="#5b554c"/><rect x="164" y="244" width="92" height="28" fill="#5b554c"/><rect x="164" y="290" width="92" height="28" fill="#5b554c"/><rect x="164" y="336" width="92" height="28" fill="#5b554c"/>
+  </g>
+</svg>

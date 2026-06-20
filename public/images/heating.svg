@@ -1,0 +1,30 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1200" fill="#1f1d1a"/>
+  <rect width="1600" height="1200" fill="url(#grid)"/>
+
+  <g stroke="#5b554c" stroke-width="40" fill="none" opacity="0.9">
+    <path d="M0 360 H560"/>
+    <path d="M0 540 H560"/>
+  </g>
+  <!-- unit -->
+  <g transform="translate(560,300)">
+    <rect x="0" y="0" width="360" height="320" fill="#1f1d1a" stroke="#cfc9bd" stroke-width="8"/>
+    <line x1="34" y1="52" x2="326" y2="52" stroke="#5b554c" stroke-width="8"/><line x1="34" y1="92" x2="326" y2="92" stroke="#5b554c" stroke-width="8"/><line x1="34" y1="132" x2="326" y2="132" stroke="#5b554c" stroke-width="8"/><line x1="34" y1="172" x2="326" y2="172" stroke="#5b554c" stroke-width="8"/><line x1="34" y1="212" x2="326" y2="212" stroke="#5b554c" stroke-width="8"/><line x1="34" y1="252" x2="326" y2="252" stroke="#5b554c" stroke-width="8"/>
+  </g>
+  <!-- heat waves -->
+  <g stroke="#d07a45" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.95">
+    <path d="M1040 380 q40 -50 80 0 q40 50 80 0 q40 -50 80 0"/>
+    <path d="M1040 500 q40 -50 80 0 q40 50 80 0 q40 -50 80 0"/>
+    <path d="M1040 620 q40 -50 80 0 q40 50 80 0 q40 -50 80 0"/>
+  </g>
+  <g stroke="#d07a45" stroke-width="8" fill="none" opacity="0.5">
+    <path d="M1320 360 q40 -50 80 0 q40 50 80 0"/>
+    <path d="M1320 480 q40 -50 80 0 q40 50 80 0"/>
+    <path d="M1320 600 q40 -50 80 0 q40 50 80 0"/>
+  </g>
+</svg>

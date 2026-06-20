@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #f2efe7;
+  --paper-2: #eae5d9;
+  --charcoal: #1a1815;
+  --ink: #0b0a09;
+  --hairline: #d9d3c7;
+  --warmgrey: #8c8479;
+  --volt: #f4b400;
+  --pipe: #2c5c7f;
+  --copper: #b5531e;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--charcoal);
+    font-family: "Inter", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--volt);
+    color: var(--ink);
+  }
+
+  /* Visible keyboard focus on the quality floor */
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--volt);
+    outline-offset: 3px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Archivo", system-ui, sans-serif;
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  /* ---- Layout shell ---- */
+  .shell {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .shell {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  /* ---- Spec-sheet eyebrow label ---- */
+  .eyebrow {
+    font-family: "Oswald", system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    font-size: 0.74rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 28px;
+    height: 2px;
+    background: currentColor;
+    display: inline-block;
+  }
+
+  /* ---- Blueprint / grid texture ---- */
+  .blueprint {
+    background-image: linear-gradient(
+        to right,
+        rgba(26, 24, 21, 0.05) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(26, 24, 21, 0.05) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  .blueprint-dark {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 38px 38px;
+  }
+
+  /* ---- The signature "trade run" coupling node ---- */
+  .coupling {
+    width: 14px;
+    height: 14px;
+    border-radius: 9999px;
+    border: 2px solid var(--charcoal);
+    background: var(--paper);
+    flex: none;
+  }
+
+  /* ---- Buttons ---- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    font-family: "Oswald", system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    font-size: 0.86rem;
+    padding: 0.95rem 1.6rem;
+    line-height: 1;
+    border: 2px solid var(--ink);
+    transition: transform 0.15s ease, background-color 0.15s ease,
+      color 0.15s ease;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  .btn-primary {
+    background: var(--volt);
+    color: var(--ink);
+  }
+  .btn-primary:hover {
+    background: var(--ink);
+    color: var(--volt);
+  }
+  .btn-dark {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .btn-dark:hover {
+    background: transparent;
+    color: var(--ink);
+  }
+  .btn-ghost-light {
+    background: transparent;
+    color: var(--paper);
+    border-color: rgba(242, 239, 231, 0.4);
+  }
+  .btn-ghost-light:hover {
+    background: var(--paper);
+    color: var(--ink);
+    border-color: var(--paper);
+  }
+
+  /* ---- Request-service inline link ---- */
+  .request-link {
+    font-family: "Oswald", system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+  .request-link svg {
+    transition: transform 0.18s ease;
+  }
+  .request-link:hover svg {
+    transform: translateX(5px);
+  }
+}
+
+@layer utilities {
+  .tracking-stamp {
+    letter-spacing: 0.18em;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

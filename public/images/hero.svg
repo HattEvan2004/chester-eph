@@ -1,0 +1,33 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1200" fill="#1f1d1a"/>
+  <rect width="1600" height="1200" fill="url(#grid)"/>
+
+  <text x="1040" y="1120" font-family="Arial, sans-serif" font-size="360" font-weight="bold"
+        fill="#ffffff" fill-opacity="0.04">1988</text>
+  <!-- electrical conduit -->
+  <g stroke="#F4B400" stroke-width="7" fill="none" opacity="0.95">
+    <path d="M120 200 V520 H560"/>
+  </g>
+  <g fill="#1f1d1a" stroke="#F4B400" stroke-width="6"><rect x="96" y="176" width="48" height="48"/></g>
+  <!-- plumbing pipe -->
+  <g stroke="#6ea3c4" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M1480 300 V640 Q1480 700 1420 700 H760"/>
+  </g>
+  <g fill="#1f1d1a" stroke="#cfc9bd" stroke-width="6"><circle cx="1480" cy="300" r="28"/></g>
+  <!-- heating duct + waves -->
+  <g stroke="#5b554c" stroke-width="34" fill="none"><path d="M0 940 H520"/></g>
+  <g stroke="#d07a45" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.9">
+    <path d="M600 900 q40 -46 80 0 q40 46 80 0 q40 -46 80 0"/>
+    <path d="M600 1000 q40 -46 80 0 q40 46 80 0 q40 -46 80 0"/>
+  </g>
+  <!-- structural greys -->
+  <g stroke="#5b554c" stroke-width="6" fill="none" opacity="0.8">
+    <path d="M560 520 H980 V160"/>
+    <circle cx="560" cy="520" r="14" fill="#1f1d1a"/>
+  </g>
+</svg>
