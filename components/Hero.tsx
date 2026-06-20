@@ -12,7 +12,7 @@ export default function Hero() {
 
       <div className="shell relative grid items-stretch gap-0 lg:grid-cols-[1.05fr_0.95fr]">
         {/* Left: copy */}
-        <div className="flex flex-col justify-center py-12 lg:py-24 lg:pr-14">
+        <div className="flex flex-col justify-center py-12 lg:py-16 lg:pr-14">
           <span className="eyebrow text-copper">
             Chester, Nova Scotia &middot; Est. {site.since}
           </span>
@@ -63,21 +63,21 @@ export default function Hero() {
         </div>
 
         {/* Right: image */}
-        <div className="relative min-h-[340px] lg:min-h-full">
-          <div className="relative h-full w-full overflow-hidden border-x-2 border-b-2 border-ink lg:border-b-2 lg:border-r-0">
+        <div className="relative lg:flex lg:min-h-full lg:items-center">
+          <div className="relative aspect-video w-full overflow-hidden border-2 border-ink">
             <div
-              className="absolute inset-0 bg-charcoal bg-cover bg-[30%_center]"
+              className="absolute inset-0 bg-charcoal bg-cover bg-center"
               style={{ backgroundImage: "url('/images/hero.jpg')" }}
               role="img"
               aria-label="Chester Electrical, Plumbing and Heating storefront on Highway 3 in Chester, Nova Scotia"
             />
-            {/* Editorial overlay: bright mid-frame keeps the sign readable,
-                deep bottom seats the badge + caption */}
+            {/* Subtle overlay: keeps the building/sign bright and clear,
+                only deepens the bottom-left corner so the badge stays legible */}
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(180deg, rgba(11,10,9,0.30) 0%, rgba(11,10,9,0.08) 34%, rgba(11,10,9,0.30) 62%, rgba(11,10,9,0.82) 100%)",
+                  "linear-gradient(180deg, rgba(11,10,9,0.22) 0%, rgba(11,10,9,0.03) 18%, rgba(11,10,9,0.03) 55%, rgba(11,10,9,0.60) 100%)",
               }}
               aria-hidden
             />
@@ -85,7 +85,7 @@ export default function Hero() {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(75deg, rgba(11,10,9,0.55) 0%, rgba(11,10,9,0) 46%)",
+                  "radial-gradient(120% 120% at 0% 100%, rgba(11,10,9,0.62) 0%, rgba(11,10,9,0) 44%)",
               }}
               aria-hidden
             />
@@ -93,15 +93,15 @@ export default function Hero() {
             <Ticks />
 
             {/* Badge + trust caption lockup */}
-            <div className="absolute bottom-5 left-5 right-5 flex items-end gap-4 sm:gap-5">
-              <div className="flex h-[104px] w-[104px] flex-none flex-col items-center justify-center rounded-full border-2 border-volt bg-ink/85 text-center text-paper backdrop-blur sm:h-32 sm:w-32">
-                <span className="font-stamp text-[0.62rem] uppercase tracking-stamp text-volt">
+            <div className="absolute bottom-4 left-4 right-4 flex items-end gap-3 sm:bottom-5 sm:left-5 sm:right-5 sm:gap-5">
+              <div className="flex h-[84px] w-[84px] flex-none flex-col items-center justify-center rounded-full border-2 border-volt bg-ink/85 text-center text-paper backdrop-blur sm:h-28 sm:w-28 lg:h-32 lg:w-32">
+                <span className="font-stamp text-[0.55rem] uppercase tracking-stamp text-volt sm:text-[0.62rem]">
                   Since
                 </span>
-                <span className="font-display text-3xl font-black leading-none sm:text-4xl">
+                <span className="font-display text-2xl font-black leading-none sm:text-4xl">
                   1988
                 </span>
-                <span className="mt-1 font-stamp text-[0.55rem] uppercase tracking-[0.18em] text-paper/70">
+                <span className="mt-0.5 font-stamp text-[0.5rem] uppercase tracking-[0.18em] text-paper/70 sm:mt-1 sm:text-[0.55rem]">
                   Built Right
                 </span>
               </div>
