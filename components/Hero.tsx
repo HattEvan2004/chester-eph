@@ -66,8 +66,8 @@ export default function Hero() {
         <div className="relative min-h-[340px] lg:min-h-full">
           <div className="relative h-full w-full overflow-hidden border-x-2 border-b-2 border-ink lg:border-b-2 lg:border-r-0">
             <div
-              className="absolute inset-0 bg-charcoal bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/hero.svg')" }}
+              className="absolute inset-0 bg-charcoal bg-cover bg-[20%_center]"
+              style={{ backgroundImage: "url('/images/hero.jpg')" }}
               role="img"
               aria-label="Chester EPH crew working on site"
             />
