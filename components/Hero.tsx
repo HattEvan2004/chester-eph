@@ -66,33 +66,52 @@ export default function Hero() {
         <div className="relative min-h-[340px] lg:min-h-full">
           <div className="relative h-full w-full overflow-hidden border-x-2 border-b-2 border-ink lg:border-b-2 lg:border-r-0">
             <div
-              className="absolute inset-0 bg-charcoal bg-cover bg-[20%_center]"
+              className="absolute inset-0 bg-charcoal bg-cover bg-[30%_center]"
               style={{ backgroundImage: "url('/images/hero.jpg')" }}
               role="img"
-              aria-label="Chester EPH crew working on site"
+              aria-label="Chester Electrical, Plumbing and Heating storefront on Highway 3 in Chester, Nova Scotia"
+            />
+            {/* Editorial overlay: bright mid-frame keeps the sign readable,
+                deep bottom seats the badge + caption */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(11,10,9,0.30) 0%, rgba(11,10,9,0.08) 34%, rgba(11,10,9,0.30) 62%, rgba(11,10,9,0.82) 100%)",
+              }}
+              aria-hidden
             />
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(180deg, rgba(11,10,9,0.15) 0%, rgba(11,10,9,0.55) 100%)",
+                  "linear-gradient(75deg, rgba(11,10,9,0.55) 0%, rgba(11,10,9,0) 46%)",
               }}
               aria-hidden
             />
             {/* corner ticks */}
             <Ticks />
 
-            {/* Since stamp */}
-            <div className="absolute bottom-5 left-5 flex h-[104px] w-[104px] flex-col items-center justify-center rounded-full border-2 border-volt bg-ink/85 text-center text-paper backdrop-blur sm:h-32 sm:w-32">
-              <span className="font-stamp text-[0.62rem] uppercase tracking-stamp text-volt">
-                Since
-              </span>
-              <span className="font-display text-3xl font-black leading-none sm:text-4xl">
-                1988
-              </span>
-              <span className="mt-1 font-stamp text-[0.55rem] uppercase tracking-[0.18em] text-paper/70">
-                Built Right
-              </span>
+            {/* Badge + trust caption lockup */}
+            <div className="absolute bottom-5 left-5 right-5 flex items-end gap-4 sm:gap-5">
+              <div className="flex h-[104px] w-[104px] flex-none flex-col items-center justify-center rounded-full border-2 border-volt bg-ink/85 text-center text-paper backdrop-blur sm:h-32 sm:w-32">
+                <span className="font-stamp text-[0.62rem] uppercase tracking-stamp text-volt">
+                  Since
+                </span>
+                <span className="font-display text-3xl font-black leading-none sm:text-4xl">
+                  1988
+                </span>
+                <span className="mt-1 font-stamp text-[0.55rem] uppercase tracking-[0.18em] text-paper/70">
+                  Built Right
+                </span>
+              </div>
+
+              <div className="min-w-0 pb-2">
+                <span className="eyebrow text-volt">Chester, Nova Scotia</span>
+                <p className="mt-1.5 font-stamp text-xs uppercase tracking-[0.16em] text-paper/75 sm:text-sm">
+                  Family owned &amp; operated
+                </p>
+              </div>
             </div>
           </div>
         </div>
