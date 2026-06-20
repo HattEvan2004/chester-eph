@@ -22,8 +22,8 @@ export default function Footer() {
           <Image
             src="/logo-white.png"
             alt={site.name}
-            width={300}
-            height={120}
+            width={1384}
+            height={521}
             className="h-11 w-auto"
           />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-paper/65">

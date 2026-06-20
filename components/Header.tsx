@@ -48,8 +48,8 @@ export default function Header() {
             <Image
               src="/logo.png"
               alt={site.name}
-              width={300}
-              height={120}
+              width={1384}
+              height={521}
               priority
               className="h-9 w-auto md:h-12"
             />
